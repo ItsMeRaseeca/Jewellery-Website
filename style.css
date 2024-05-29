@@ -1,5 +1,5 @@
 body {
-  font-family: 'Poppins' !important;
+  font-family: "Poppins" !important;
 }
 
 .section-container {
@@ -29,7 +29,7 @@ body {
   border-radius: 5px;
   text-decoration: none;
   font-size: 16px;
-  max-width: 120px;
+  width: 120px;
   text-align: center;
   cursor: pointer;
 }
@@ -152,28 +152,10 @@ body {
 
 
 
-@media (max-width: 391px) {
-  .swiper-button-prev,
-  .swiper-button-next {
-    transform: scale(0.5);
-    position: absolute;
-    top: 70%;
-    transform: translateY(300px);
-  }
-}
-
 @media screen and (max-width: 450px) {
   .logo {
-    width: 150px;
+    width: 152px;
     margin-right: 25px;
-  }
-
-  .carousel-card {
-    width: 80%;
-  }
-
-  .cards-wrapper {
-    display: flex;
   }
 
   .swiper-slide .card {
@@ -186,7 +168,61 @@ body {
   }
 }
 
-@media screen and (min-width: 451px) and (max-width: 832px) {
+@media screen and (min-width: 568px) {
+  .swiper-slide .card {
+    height: 420px;
+  }
+
+  .logo{
+    width: 240px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .hero-card-title{
+    font-size: 24px;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .hero-card-title{
+    font-size: 16px;
+  } 
+   .nav-item,
+  .nav-link,
+  .dropdown-item {
+    font-size: 14px;
+  }
+
+  p {
+    font-size: 18px;
+  }
+}
+
+@media only screen and (max-width: 2000px) {
+  .card-title{
+    font-size: 24px;
+  }
+}
+
+@media only screen and (min-width: 1201px) and (max-width: 1599px) {
+  .nav-item,
+  .nav-link,
+  .dropdown-item {
+    font-size: 16px;
+  }
+
+  p {
+    font-size: 18px;
+  }
+
+  .card-title,
+  .hero-card-title {
+    font-size: 22px;
+  }
+}
+
+@media only screen and (min-width: 1600px){
   .nav-item,
   .nav-link,
   .dropdown-item {
@@ -194,190 +230,20 @@ body {
   }
 
   p {
-    font-size: 1.3rem !important;
-  }
-}
-
-@media screen and (min-width: 568px) {
-  .cards-wrapper {
-    display: flex;
-  }
-
-  .carousel-card {
-    margin: 0 0.5em;
-    width: calc(100% / 3);
-  }
-
-  .swiper-slide .card {
-    height: 420px;
-  }
-}
-
-@media screen and (max-width: 576px) {
-  .image-wrapper {
-    height: 100%;
-    width: 100%;
-  }
-
-  .image-wrapper img {
-    width: 100%;
-    height: auto;
-    display: block;
-  }
-
-  .carousel-card {
-    width: 70%;
-  }
-
-  .cards-wrapper {
-    display: flex;
-    flex-direction: column;
-    gap: 25px;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .swiper-button-prev,
-  .swiper-button-next {
-    font-size: 10px !important;
-    position: absolute;
-    top: 60%;
-    transform: translateY(200px);
-  }
-
-  p {
-    font-size: 1rem;
-  }
-}
-
-@media (min-width: 576px) and (max-width: 832px) {
-  .swiper-button-prev,
-  .swiper-button-next {
-    transform: scale(0.5);
-    position: absolute;
-    top: 50%;
-    transform: translateY(100px);
-  }
-
-  .image-wrapper img {
-    width: 100%;
-    height: 100%;
-    display: block;
-  }
-
-  .image-wrapper {
-    height: 15vw !important;
-    margin: 0 auto;
-    width: 100%;
-  }
-
-  .image-wrapper {
-    height: 100%;
-    width: 100%;
-  }
-
-  p {
-    font-size: 1rem !important;
-  }
-}
-
-@media screen and (min-width: 768px) and (max-width: 991px) {
-  .hero-card-title,
-  .hero-card-title {
-    font-size: 1rem !important;
-  }
-}
-
-
-@media screen and (min-width: 833px) and (max-width: 1200px) {
-  #search-bar {
-    margin-top: 70px;
-    position: absolute;
-    left: 80%;
-    height: 35px;
-    width: 220px;
-  }
-
-  .image-wrapper {
-    height: 15vw;
-    margin: 0 auto;
-    width: 100%;
-  }
-
-  .image-wrapper img {
-    width: 100%;
-    height: 100%;
-    display: block;
-  }
-
-  .nav-item,
-  .nav-link,
-  .dropdown-item {
-    font-size: 14px;
-  }
-
-  p {
-    font-size: 1.2rem;
+    font-size: 24px;
   }
 
   .card-title,
   .hero-card-title {
-    font-size: 1.2rem;
+    font-size: 26px;
+  }
+
+  .btn-style{
+    font-size: 19px;
+    width: 160px;
   }
 }
 
-@media screen and (min-width: 1201px) {
-  #search-bar {
-    height: 35px;
-    width: 200px;
-    margin-top: 8px;
-  }
-
-  .image-wrapper img {
-    width: 100%;
-    height: 100%;
-    display: block;
-  }
-  .image-wrapper {
-    height: 15vw;
-    margin: 0 auto;
-    width: 100%;
-  }
-
-  .nav-item,
-  .nav-link,
-  .dropdown-item {
-    font-size: 1.1rem;
-  }
-
-  .footer .nav-item {
-    padding-left: 18px;
-  }
-
-  p {
-    font-size: 1.5rem;
-  }
-
-  .card-title,
-  .hero-card-title {
-    font-size: 1.8rem;
-  }
-}
-
-.swiper-button-next,
-.swiper-button-prev {
-  margin: 13%;
-  color: #401c74 !important;
-}
-
-.swiper-button-next:hover,
-.swiper-button-prev:hover {
-  color: #9080a7 !important;
-}
-
-.active {
-  width: 200px;
-}
 
 .navbar-toggler:focus {
   box-shadow: none !important;
@@ -393,7 +259,6 @@ body {
 .slick-prev,
 .slick-next {
   color: #401c74 !important;
-  border: none;
   font-size: 16px;
   cursor: pointer;
 }
@@ -408,11 +273,6 @@ body {
   z-index: 1;
 }
 
-.slick-prev:hover,
-.slick-next:hover {
-  color: #301257 !important;
-}
-
 .slick-prev::before,
 .slick-next::before {
   font-size: 40px !important;
@@ -420,11 +280,6 @@ body {
   background-color: white;
   opacity: 100 !important;
   border-radius: 50%;
-}
-
-.slick-prev:hover::before,
-.slick-next:hover::before {
-  color: #301257;
 }
 
 .card-shadow {
