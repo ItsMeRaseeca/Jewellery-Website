@@ -1,4 +1,4 @@
-A Responsive Jewellery Website created using HTML, CSS, JavaScript, additionally using Bootstrap elements. 
+A Responsive Jewellery Website created using HTML, CSS, JavaScript, additionally using Bootstrap.
 
 **More Libraries used for the website**-
 1. *Swiper JS* - Swiper is a JavaScript library that creates modern touch sliders with hardware-accelerated transitions (utilizing GPU to offload graphic-intensive transitions and create smoother visuals) and excellent native behavior.
