@@ -1,13 +1,13 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ornaments India</title>
+    <link rel="icon" type="image/x-icon" href="/images/Site logo.png">
+
     <!-- Stylesheet and  Dependency Links-->
     <link rel="stylesheet" href="style.css">
-    <link rel="icon" type="image/x-icon" href="images/Site logo.png">
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
@@ -22,62 +22,63 @@
 
 
   <!-- Navbar/Header Section--> 
-  <section class="section-container header-footer-bg">
-    <div class="container d-flex justify-content-center" data-aos="fade-right" data-aos-duration="1500">
-      <nav class="navbar navbar-expand-lg">
-          <div class="container-fluid">
-            <img src="images/logo.png" class="img-fluid logo d-flex justify-content-center me-xxl-5 me-xl-5 me-lg-3 me-md-5 me-sm-4" width="210px" alt="Ornaments India">
 
+      <nav class="navbar navbar-expand-xl sticky-top py-3 align-items-center bg-white">
+          <div class="container">
+            <a class="navbar-brand" href="index.html"><img src="images/logo.png" class="img-fluid logo d-block d-lg-none" style="max-width: 210px;" alt="Ornaments India"></a>
             <button class="navbar-toggler border border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
-              <ul class="navbar-nav py-2 text-center d-flex justify-content-center align-items-center gap-xxl-5 gap-xl-4 gap-lg-3">
-                <li class="nav-item">
-                  <a class="nav-link text-dark hvr-underline-from-left" aria-current="page" href="#">Home</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link text-dark hvr-underline-from-left" aria-current="page" href="#">About</a>
-                </li>
-                <li class="nav-item dropdown">
-                  <a class="nav-link text-dark hvr-underline-from-left dropdown-toggle btn" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                    Jewellery
+              <ul class="navbar-nav justify-content-lg-center flex-grow-1 pe-2">
+                  <li class="nav-item">
+                      <a class="nav-link text-dark hvr-underline-from-left" href="#">Home</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link text-dark hvr-underline-from-left" href="#">About</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle text-dark" href="#" id="jewelleryDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          Jewellery
+                      </a>
+                      <ul class="dropdown-menu" aria-labelledby="jewelleryDropdown">
+                          <li><a class="dropdown-item" href="#">Diamond Jewellery</a></li>
+                          <li><a class="dropdown-item" href="#">Gold Jewellery</a></li>
+                          <li><a class="dropdown-item" href="#">Imitation Jewellery</a></li>
+                          <li><a class="dropdown-item" href="#">Silver Jewellery</a></li>
+                      </ul>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link text-dark hvr-underline-from-left" href="#">Catalogue</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link text-dark hvr-underline-from-left" href="#">News</a>
+                  </li>
+                  <a class="navbar-brand d-none d-lg-block mx-auto" href="index.html">
+                      <img src="images/logo.png" class="img-fluid logo" style="max-width: 210px;" alt="Ornaments India">
                   </a>
-                  <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="#">Diamond Jewellery</a></li>
-                    <li><a class="dropdown-item" href="#">Gold Jewellery</a></li>
-                    <li><a class="dropdown-item" href="#">Imitation Jewellery</a></li>
-                    <li><a class="dropdown-item" href="#">Silver Jewellery</a></li>
-                  </ul>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link text-dark hvr-underline-from-left" aria-current="page" href="#">Catalogue</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link text-dark hvr-underline-from-left" aria-current="page" href="#">News</a>
-                </li>
-                <li class="nav-item dropdown">
-                  <a class="nav-link text-dark hvr-underline-from-left dropdown-toggle btn" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                    Knowledge Center
-                  </a>
-                  <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="#">Articles</a></li>
-                    <li><a class="dropdown-item" href="#">Diamond Guide</a></li>
-                    <li><a class="dropdown-item" href="#">Gemstone</a></li>
-                    <li><a class="dropdown-item" href="#">Investment</a></li>
-                  </ul>
-                </li>
-                <li class="nav-item dropdown">
-                  <a class="nav-link text-dark hvr-underline-from-left dropdown-toggle btn" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                    More
-                  </a>
-                  <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="#">Exhibition</a></li>
-                    <li><a class="dropdown-item" href="#">Career</a></li>
-                    <li><a class="dropdown-item" href="#">Contact</a></li>
-                  </ul>
-                </li>
-              </ul>              
+                  <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle text-dark" href="#" id="knowledgeCenterDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          Knowledge Center
+                      </a>
+                      <ul class="dropdown-menu" aria-labelledby="knowledgeCenterDropdown">
+                          <li><a class="dropdown-item" href="#">Articles</a></li>
+                          <li><a class="dropdown-item" href="#">Diamond Guide</a></li>
+                          <li><a class="dropdown-item" href="#">Gemstone</a></li>
+                          <li><a class="dropdown-item" href="#">Investment</a></li>
+                      </ul>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link text-dark hvr-underline-from-left" href="#">Exhibition</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link text-dark hvr-underline-from-left" href="#">Career</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link text-dark hvr-underline-from-left" href="#">Contact</a>
+                  </li>
+              </ul>
+                        
             </div>
             <div class="d-inline-flex gap-1">
               <a class="btn border-0" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
@@ -86,8 +87,7 @@
             </div>
           </div>
       </nav>
-    </div>
-  </section>
+   
 
 
 
@@ -100,13 +100,13 @@
               <a class="my-2 my-sm-0 search-btn-style" type="submit"> <i class="bi bi-search"></i></a>
             </form>
           </div>
-          <h1 class="fw-bold text-center py-4 ff-serif theme-text-color">Trending in Jewellery</h1>
+          <h1 class="fw-bold text-center py-4 h3 ff-serif theme-text-color">Trending in Jewellery</h1>
         <div class="row row-cols-12 g-4">
             <div class="col-lg-6 col-md-6 col-sm-12">
               <div class="card position-relative border-0 border-white rounded-3">
                 <img src="images/card1-image.jpg" class="img-fluid card-img-center rounded-3" alt="Jewellery">
                 <div class="card-img-overlay d-flex flex-column justify-content-end hvr-underline-from-left card-shadow rounded-3">
-                  <p class="hero-card-title fw-semibold text-white">Buying Diamonds, Select the Best Company</p>
+                  <h2 class="hero-card-title fw-semibold text-white">Buying Diamonds, Select the Best Company</h2>
                 </div>
               </div>
             </div>
@@ -114,13 +114,13 @@
               <div class="card position-relative border-0 border-white mb-3 rounded-3">
                 <img src="images/card2-image.jpg" class="img-fluid card-img-center rounded-3" alt="Jewellery">
                 <div class="card-img-overlay d-flex flex-column justify-content-end hvr-underline-from-left card-shadow rounded-3">
-                  <p class="hero-card-title fw-semibold text-white pt-4">Gold prices jump after duty hike</p>
+                  <h2 class="hero-card-title fw-semibold text-white">Gold prices jump after duty hike</h2>
                 </div>
               </div>
               <div class="card position-relative border-0 border-white rounded-3">
                 <img src="images/gemstone.jpg" class="img-fluid card-img-center rounded-3" alt="Jewellery">
                 <div class="card-img-overlay d-flex flex-column justify-content-end hvr-underline-from-left card-shadow rounded-3">
-                  <p class="hero-card-title fw-semibold text-white">Types Of Gemstone</p>
+                  <h2 class="hero-card-title fw-semibold text-white">Types Of Gemstone</h2>
                 </div>
               </div>
             </div>
@@ -128,13 +128,13 @@
               <div class="card position-relative border-0 border-white mb-3 rounded-3">
                 <img src="images/iijs.jpg" class="img-fluid card-img-center rounded-3" alt="Jewellery">
                 <div class="card-img-overlay d-flex flex-column justify-content-end hvr-underline-from-left card-shadow rounded-3">
-                  <p class="hero-card-title fw-semibold text-white">India International Jewellery Show</p>
+                  <h2 class="hero-card-title fw-semibold text-white">India International Jewellery Show</h2>
                 </div>
               </div>
               <div class="card position-relative border-0 border-white rounded-3">
                 <img src="images/new-directions.jpg" class="img-fluid card-img-center rounded-3" alt="Jewellery">
                 <div class="card-img-overlay d-flex flex-column justify-content-end hvr-underline-from-left card-shadow rounded-3">
-                  <p class="hero-card-title fw-semibold text-white">New Directions In Jewellery</p>
+                  <h2 class="hero-card-title fw-semibold text-white">New Directions In Jewellery</h2>
                 </div>
               </div>
             </div>
@@ -153,7 +153,7 @@
             <img src="images/hero-jewellery-image.jpg" class="d-block mx-lg-auto px-xl-1 px-lg-3 px-md-5 img-fluid" alt="Diamond Necklace"  loading="lazy">
           </div>
           <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-12">
-            <h3 class="display-6 ff-serif fw-bold text-body-emphasis lh-1 mb-3">Discover the Best Jewellery Collection on Ornaments India, Your Trusted Jewellery Portal</h3>
+            <h3 class="display-6 lh-1 fw-bold text-body-emphasis mb-3">Discover the Best Jewellery Collection on Ornaments India, Your Trusted Jewellery Portal</h3>
             <p class="fw-normal py-3">Ornaments India, Leading Jewellery Portal provides News, Articles, Jewellery Shopping information etc. We include your Website or Catalogue in Business to Business and Marketing Category. We also guide you in Jewellery Making, Designs, Shops, Stores, Brands Information and Career in Jewellery Industry.</p>
             <div class="d-grid gap-2 d-md-flex justify-content-md-start">
               <a class="btn-style py-1 me-md-2 hvr-sweep-to-right fw-semibold">Know More</a>
@@ -173,65 +173,65 @@
       <div class="slider multiple-items">
   
         <div class="card card-cover card-shadow overflow-hidden text-bg-dark rounded-4 mx-2 card-common-style" style="background-image: url(images/article-1.jpg);">
-          <div class="d-flex flex-column p-5 pb-3 text-shadow-1">
-            <h6 class="fw-bold">> Articles</h6>
-            <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">New Directions In Jewellery</h3>
+          <div class="d-flex position-absolute bottom-0 flex-column p-4 pb-3 text-shadow-1">
+            <span class="fw-bold">> Articles</span>
+            <h3 class="pt-2 h4 mb-4 fw-bold">New Directions In Jewellery</h3>
           </div>
         </div>
   
         <div class="card card-cover card-shadow overflow-hidden text-bg-dark rounded-4 mx-2 card-common-style" style="background-image: url(images/carousel-image-1.jpg);">
-          <div class="d-flex flex-column p-5 pb-3 text-shadow-1">
-            <h6 class="fw-bold">> Jewellery Shopping</h6>
-            <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Explore Diamond Jewellery</h3>
+          <div class="d-flex position-absolute bottom-0 flex-column p-4 pb-3 text-shadow-1">
+            <span class="fw-bold">> Jewellery Shopping</span>
+            <h3 class="pt-2 h4 mb-4 fw-bold">Explore Diamond Jewellery</h3>
           </div>
         </div>
   
         <div class="card card-cover card-shadow overflow-hidden text-bg-dark rounded-4 mx-2 card-common-style" style="background-image: url(images/diamond-guide-1.jpg);">
-          <div class="d-flex flex-column p-5 pb-3 text-shadow-1">
-            <h6 class="fw-bold">> Diamond Guide</h6>
-            <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Diamond Buying Guide</h3>
+          <div class="d-flex position-absolute bottom-0 flex-column p-4 pb-3 text-shadow-1">
+            <span class="fw-bold">> Diamond Guide</span>
+            <h3 class="pt-2 h4 mb-4 fw-bold">Diamond Buying Guide</h3>
           </div>
         </div>
   
         <div class="card card-cover card-shadow overflow-hidden text-bg-dark rounded-4 mx-2 card-common-style" style="background-image: url(images/gemstone.jpg);">
-          <div class="d-flex flex-column p-5 pb-3 text-shadow-1">
-            <h6 class="fw-bold">> Gemstone</h6>
-            <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Value Of Gemstones</h3>
+          <div class="d-flex position-absolute bottom-0 flex-column p-4 pb-3 text-shadow-1">
+            <span class="fw-bold">> Gemstone</span>
+            <h3 class="pt-2 h4 mb-4 fw-bold">Value Of Gemstones</h3>
           </div>
         </div>
   
         <div class="card card-cover card-shadow overflow-hidden text-bg-dark rounded-4 mx-2 card-common-style" style="background-image: url(images/article-2.jpg);">
-          <div class="d-flex flex-column p-5 pb-3 text-shadow-1">
-            <h6 class="fw-bold">> Articles</h6>
-            <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Historic Jewellery</h3>
+          <div class="d-flex position-absolute bottom-0 flex-column p-4 pb-3 text-shadow-1">
+            <span class="fw-bold">> Articles</span>
+            <h3 class="pt-2 h4 mb-4 fw-bold">Historic Jewellery</h3>
           </div>
         </div>
   
         <div class="card card-cover card-shadow overflow-hidden text-bg-dark rounded-4 mx-2 card-common-style" style="background-image: url(images/carousel-image-2.jpg);">
-          <div class="d-flex flex-column p-5 pb-3 text-shadow-1">
-            <h6 class="fw-bold">> Jewellery Shopping</h6>
-            <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Explore Gold Jewellery</h3>
+          <div class="d-flex position-absolute bottom-0 flex-column p-4 pb-3 text-shadow-1">
+            <span class="fw-bold">> Jewellery Shopping</span>
+            <h3 class="pt-2 h4 mb-4 fw-bold">Explore Gold Jewellery</h3>
           </div>
         </div>
   
         <div class="card card-cover card-shadow overflow-hidden text-bg-dark rounded-4 mx-2 card-common-style" style="background-image: url(images/diamond-guide-2.jpg);">
-          <div class="d-flex flex-column p-5 pb-3 text-shadow-1">
-            <h6 class="fw-bold">> Diamond Guide</h6>
-            <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Diamond Grades, Color And Clarity</h3>
+          <div class="d-flex position-absolute bottom-0 flex-column p-4 pb-3 text-shadow-1">
+            <span class="fw-bold">> Diamond Guide</span>
+            <h3 class="pt-2 h4 mb-4 fw-bold">Diamond Grades, Color And Clarity</h3>
           </div>
         </div>
   
         <div class="card card-cover card-shadow overflow-hidden text-bg-dark rounded-4 mx-2 card-common-style" style="background-image: url(images/article-3.jpg);">
-          <div class="d-flex flex-column p-5 pb-3 text-shadow-1">
-            <h6 class="fw-bold">> Articles</h6>
-            <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Creative Ways To Storing Jewellery</h3>
+          <div class="d-flex position-absolute bottom-0 flex-column p-4 pb-3 text-shadow-1">
+            <span class="fw-bold">> Articles</span>
+            <h3 class="pt-2 h4 mb-4 fw-bold">Creative Ways To Storing Jewellery</h3>
           </div>
         </div>
   
         <div class="card card-cover card-shadow overflow-hidden text-bg-dark rounded-4 mx-2 card-common-style" style="background-image: url(images/carousel-image-3.jpg);">
-          <div class="d-flex flex-column p-5 pb-3 text-shadow-1">
-            <h6 class="fw-bold">> Jewellery Shopping</h6>
-            <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Explore Imitation Jewellery</h3>
+          <div class="d-flex position-absolute bottom-0 flex-column p-4 pb-3 text-shadow-1">
+            <span class="fw-bold">> Jewellery Shopping</span>
+            <h3 class="pt-2 h4 mb-4 fw-bold">Explore Imitation Jewellery</h3>
           </div>
         </div>
   
@@ -248,14 +248,14 @@
       <div class="swiper-wrapper">
         <div class="swiper-slide bg-white p-3 rounded-3 border-0">
           <div class="py-3">
-            <div class="row g-0 pt-3 text-center d-flex flex-column justify-content-center align-items-center">
-              <div class="col-md-4 p-2">
+            <div class="pt-3 text-center">
+              <div class="p-2">
                 <img src="images/logo.png" class="img-fluid rounded-start" alt="...">
               </div>
-              <div class="col-md-8">
+              <div class="">
                 <div class="card-body">
-                  <h5 class="card-title fw-semibold py-3">Jewellery Catalogue</h5>
-                  <p class="card-text">Ornaments India is Jewellery Portal, We include your Website or Catalogs in Business to Business, Marketing and Advertising 
+                  <h3 class="card-title fw-semibold py-2">Jewellery Catalogue</h3>
+                  <p>Ornaments India is Jewellery Portal, We include your Website or Catalogs in Business to Business, Marketing and Advertising 
                     category. This website is for Online Showroom of Jewellery, Gold, Diamonds and Imitation Jewellery, Gemstone Network.</p>
                     <a class="btn-style py-1 me-md-2 hvr-sweep-to-right fw-semibold">Know More</a>
                 </div>
@@ -267,14 +267,14 @@
       <div class="swiper-slide bg-white p-3 rounded-3 border-0">
             <div class="row">
               <div class="py-3">
-                <div class="row g-0 pt-3 text-center d-flex flex-column justify-content-center align-items-center">
-                  <div class="col-md-4 p-2">
+                <div class="pt-3 text-center">
+                  <div class="p-2">
                     <img src="images/catalogue-1.png" class="img-fluid rounded-start" alt="...">
                   </div>
-                  <div class="col-md-8">
+                  <div class="">
                     <div class="card-body">
-                      <h5 class="card-title fw-semibold py-3">Yash Jewels</h5>
-                      <p class="card-text">Yash Jewels is a Mumbai based jewellery company affianced in manufacturing all class of Diamond Jewellery. The company was established 
+                      <h3 class="card-title fw-semibold py-2">Yash Jewels</h3>
+                      <p>Yash Jewels is a Mumbai based jewellery company affianced in manufacturing all class of Diamond Jewellery. The company was established 
                         in the year 2007 and is owned by Mr. Pradeep Sanghavi. With his magnificent experience in this field, makes him shine in the dome of manufacturing, 
                         exporting and supplying Diamonds and Diamond jewellery. </p>
                         <a class="btn-style py-1 me-md-2 hvr-sweep-to-right fw-semibold">Know More</a>
@@ -286,15 +286,15 @@
       </div>
       <div class="swiper-slide bg-white p-3 rounded-3 border-0">
         <div class="py-3">
-          <div class="row g-0 pt-3 text-center d-flex flex-column justify-content-center align-items-center">
-            <div class="col-md-4 p-2">
+          <div class="pt-3 text-center">
+            <div class="p-2">
               <img src="images/catalogue-2.png" class="img-fluid rounded-start" alt="...">
             </div>
-            <div class="col-md-8">
+            <div class="">
               <div class="card-body">
-                <h5 class="card-title fw-semibold py-3">Navnidhi Jewels</h5>
-                <p class="card-text">We are manufacturing organization in the field of “Diamond Studded Jewellery”. Our Company “Navnidhi Jewels” came into existence since 
-                  31st Jan 2008. Since then we are there in this business.   Our Products : Bangle Bracelet Ring Necklace. Our Website Url : http://www.navnidhijewels.com/</p>
+                <h3 class="card-title fw-semibold py-2">Navnidhi Jewels</h3>
+                <p>We are manufacturing organization in the field of “Diamond Studded Jewellery”. Our Company “Navnidhi Jewels” came into existence since 
+                  31st Jan 2008. Since then we are there in this business.   Our Products : Bangle Bracelet Ring Necklace. Our Website Url :<a href="http://www.navnidhijewels.com/" class="text-decoration-none text-dark" target="_blank"> http://www.navnidhijewels.com/</a></p>
                   <a class="btn-style py-1 me-md-2 hvr-sweep-to-right fw-semibold">Know More</a>
               </div>
             </div>
@@ -303,14 +303,14 @@
       </div>
       <div class="swiper-slide bg-white p-3 rounded-3 border-0">
         <div class="py-3">
-          <div class="row g-0 pt-3 text-center d-flex flex-column justify-content-center align-items-center">
-            <div class="col-md-4 p-2">
+          <div class="pt-3 text-center">
+            <div class="p-2">
               <img src="images/catalogue-3.jpg" class="img-fluid rounded-start" alt="...">
             </div>
-            <div class="col-md-8">
+            <div class="">
               <div class="card-body">
-                <h5 class="card-title fw-semibold py-3">R.K. Industries</h5>
-                <p class="card-text">R. K. Industries was started as a plastic manufacturing house in Mumbai, India in 1993 with a prime objective of enhancing values 
+                <h3 class="card-title fw-semibold py-2">R.K. Industries</h3>
+                <p>R. K. Industries was started as a plastic manufacturing house in Mumbai, India in 1993 with a prime objective of enhancing values 
                   for our Customers. Talk about value! By focusing on innovative products with low minimums, We take the lead in the Jewellery Boxes Manufacturing, consistently 
                   delivering quality items at competitive prices.</p>
                   <a class="btn-style py-1 me-md-2 hvr-sweep-to-right fw-semibold">Know More</a>
@@ -334,6 +334,68 @@
   </section>
 
 
+  <!-- News Section -->
+  <section class="section-container my-5 py-5">
+    <h3 class="display-6 fw-bold text-center py-5 theme-text-color mb-3">News</h3>
+    <div class="container d-flex justify-content-center">
+      <div class="d-xl-flex-column d-xxl-flex gap-sm-5 gap-xl-4 px-3">
+        <div class="card mb-5" style="max-width: 1000px;">
+          <div class="row g-0">
+            <div class="col-md-4">
+              <img src="images/news-1.jpg" class="card-img-top rounded-start" alt="News 1 Image">
+            </div>
+            <div class="col-md-8">
+              <div class="card-body">
+                <h5 class="card-title">India Govt hikes import duty on Gold, Silver, Platinum</h5>
+                <p class="card-text">According to P Chidambaram, who announced the decision on Tuesday, Government could earn Rs 4830 cr in the remaining...</p>
+                <div class="mt-auto">
+                  <p class="card-text pt-3"><small class="text-muted">3 Days ago</small></p>
+                  <a href="#" class="btn-style py-1 me-md-2 hvr-sweep-to-right fw-semibold">Read</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+    
+        <div class="card mb-5" style="max-width: 1000px;">
+          <div class="row g-0">
+            <div class="col-md-4">
+              <img src="images/news-2.jpg" class="card-img-top rounded-start" alt="News 2 Image">
+            </div>
+            <div class="col-md-8">
+              <div class="card-body">
+                <h5 class="card-title">India Plans To Utilize 20,000 Tons Of Idle Household Gold</h5>
+                <p class="card-text">India could look to strengthen financial products such as e-gold, gold futures and gold exchange traded funds or inflation...</p>
+                <div class="mt-auto">
+                  <p class="card-text pt-3"><small class="text-muted">1 Day ago</small></p>
+                  <a href="#" class="btn-style py-1 me-md-2 hvr-sweep-to-right fw-semibold">Read</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+    
+        <div class="card mb-5" style="max-width: 1000px;">
+          <div class="row g-0">
+            <div class="col-md-4">
+              <img src="images/news-3.jpg" class="card-img-top rounded-start" alt="News 3 Image">
+            </div>
+            <div class="col-md-8">
+              <div class="card-body">
+                <h5 class="card-title">Govt Cuts Import Tariff Value Of Gold, Silver</h5>
+                <p class="card-text">The government on Friday slashed the import tariff value of gold marginally to USD 550 per 10 grams...</p>
+                <div class="mt-auto">
+                  <p class="card-text pt-3"><small class="text-muted">6 Days ago</small></p>
+                  <a href="#" class="btn-style py-1 me-md-2 hvr-sweep-to-right fw-semibold">Read</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
 
   <!-- Footer -->
   <footer class="footer header-footer-bg">
@@ -349,7 +411,7 @@
           </div>
   
           <div class="col-xs-12 col-xl-6 order-2 order-xl-1">
-            <ul class="nav justify-content-center align-items-center">
+            <ul class="nav justify-content-center">
               <li class="nav-item">
                 <a class="nav-link link-secondary px-2 px-md-3 hvr-grow" href="#!">Home</a>
               </li>
@@ -395,7 +457,7 @@
       </div>
     </div>
   
-    <div class="bg-light py-3 py-md-5 border-top border-light-subtle">
+    <div class="bg-light py-3 border-top border-light-subtle">
       <div class="container overflow-hidden">
         <div class="row">
           <div class="col">
@@ -411,17 +473,17 @@
 
 
   <!-- Script Tags -->
+   
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
       AOS.init({
-        once: true,
-        mirror: false,
+        once: true
       });
     </script>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <script type="text/javascript" src="index.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   </body>
 </html>
